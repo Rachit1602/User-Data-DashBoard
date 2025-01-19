@@ -28,4 +28,4 @@ app.use('/',userRoutes);
 app.use('/',(req,res)=>{
     res.send('hii');
 })
-app.listen(5001, () => console.log('Server running on http://localhost:5001'));
+app.listen(process.env.PORT, () => console.log('Server running on http://localhost:5001'));
