@@ -22,7 +22,8 @@ const allowedorigin=[
 connect();
 app.use(cors({
     origin:allowedorigin,
-    methods:['GET','POST']
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
 }));
 app.use(bodyParser.json())
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
