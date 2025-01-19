@@ -19,7 +19,7 @@ const RegisterForm = () => {
     e.preventDefault();
     try {
         console.log(formData)
-      const response = await axios.post("http://localhost:5001/admin/register", formData);
+      const response = await axios.post("https://user-data-dashboard.onrender.com/admin/register", formData);
       alert(response.data.message);
       navigate("/login");
     } catch (err) {

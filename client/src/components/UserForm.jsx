@@ -16,7 +16,7 @@ const UserForm = () => {
             formData.append('images', image);
         }
         try {
-            await axios.post('http://localhost:5001/submit', formData, {
+            await axios.post('https://user-data-dashboard.onrender.com/submit', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             alert('Submission successful!');

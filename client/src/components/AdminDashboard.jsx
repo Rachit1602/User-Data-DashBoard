@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     };
     useEffect(() => {
         const fetchSubmissions = async () => {
-            const res = await axios.get('http://localhost:5001/admin/submissions',config);
+            const res = await axios.get('https://user-data-dashboard.onrender.com/admin/submissions',config);
             console.log(res.data);
             setUsers(res.data);
         };
@@ -30,7 +30,7 @@ const AdminDashboard = () => {
                         {user.images.map((img, idx) => (
                             <img
                                 key={idx}
-                                src={`http://localhost:5001/${img}`}
+                                src={`https://user-data-dashboard.onrender.com/${img}`}
                                 alt={`user-${index}-${idx}`}
                                 className="h-20"
                             />

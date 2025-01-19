@@ -16,7 +16,7 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5001/admin/login", formData);
+      const response = await axios.post("https://user-data-dashboard.onrender.com/admin/login", formData);
       alert(response.data.message);
       login(response.data.token);
       navigate('/submissions')
