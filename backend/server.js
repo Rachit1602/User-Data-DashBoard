@@ -14,7 +14,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const allowedorigin=[
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://user-data-dash-board-rachit1602s-projects.vercel.app/",
+    "https://user-data-dash-board-git-main-rachit1602s-projects.vercel.app/"
 ]
 connect();
 app.use(cors({
